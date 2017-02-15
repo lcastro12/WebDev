@@ -2,6 +2,11 @@ div a{
 	font-size: 15px;
 }
 
+.item {
+	width:40%;
+	height:auto;
+}
+
 .row {
 	padding-right: 0;
 }
