@@ -9,7 +9,7 @@
 	<!-- Bootstrap -->
 	<!--link href="css/bootstrap.min.css" rel="stylesheet"!-->
 	<!-- Latest compiled and minified CSS -->
-	<script src="js/javascript.js"></script>
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -19,6 +19,7 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="https://use.fontawesome.com/d84be45c8c.js"></script>
+	<script src="js/javascript.js"></script>
 
 	<title>WebPage</title>
 
@@ -86,18 +87,24 @@
 				</div>
 				<div class="con_list">
 					<ul class="cono_lista">
+					<div class="div-1"  onmouseover= "toggle_visibility('img1')">
 						<li class="cono_lista">
-							<img class="cono_img" src="images/html.png" alt="HTML">
+							<img class="cono_img" id="img1" src="images/html.png" alt="HTML">
 							<p>Lenguaje estándar para la elaboración de páginas web. Determina el contenido de esta mas no su funcionalidad.</p>
 						</li>
+						</div>
+						<div class="div-1" onmouseover="toggle_visibility('img2')">
 						<li class="cono_lista">
-							<img class="cono_img" src="images/CSS.png" alt ="CSS">
+							<img class="cono_img" id="img2" src="images/CSS.png" alt ="CSS">
 							<p>Lenguaje que nos permite cambiar el diseño de las páginas web.</p>
 						</li>
+						</div>
+						<div class="div-1" onmouseover="toggle_visibility('img3')">
 						<li class="cono_lista">
-							<img class="cono_img" src="images/javascript.png" alt="JavaScript">
+							<img class="cono_img" id="img3" src="images/javascript.png" alt="JavaScript">
 							<p>Lenguaje orientado a objetos. Ayuda a enviar y recibir información del servidor, y volver más dinámica las páginas web.</p>
 						</li>
+						</div>
 					</ul>
 				</div>
 			</div>
@@ -106,7 +113,18 @@
 			<div class="row">
 				<div class="col-md-1">
 					<h2>Trabajos Universitarios</h2>
-				</div>
+					</div>
+					<br>
+					<div class="circle step-1">
+						<ul>
+							<li class="trab_lista"><b>UniTrip-Desarrollo de Software en equipo</b></li>
+							<li class="trab_lista"><b>OilCol-Arquitectura y Diseño de Software</b></li>
+							<li class="trab_lista"><b>PuertoAndes-Sistemas Transaccionales</b></li>
+							<li class="trab_lista"><b>Monitoría Algortmica y Programación de Objetos</b></li>
+							<li class="trab_lista"><b>Monitoría Sistemas transaccionales</b></li>
+						</ul>
+					</div>
+			
 			</div>
 		</div>
 		<div id="Hobbies" class="container-fluid">
@@ -133,7 +151,7 @@
 						<div class="item">
 							<img src="images/nature.JPG" alt="Nature">
 							<div class="carousel-caption">
-								<h3>Caminar</h3>
+								<h3>"Hiking"</h3>
 							</div>
 						</div>
 
@@ -161,25 +179,33 @@
 				</div>
 			</div>
 		</div>
-	<div id="Contacto">
-		<div class="row">
-			<div class="col-md-1">
-				<h2>Contacto</h2>
-			</div>
-			<div class="lista">
-				<ol>
-				<li class="fa fa-facebook-official fa-lg">Laura Castro</li>
-				<li class="fa fa-twitter fa-lg">lcastro1220</li>
-				<li class="fa fa-envelope fa-lg">lcastrocdo@gmail.com</li>
+		<div id="Contacto">
+			<div class="row">
+				<div class="col-md-1">
+					<h2>Contacto</h2>
+				</div>
+				<br>
+				<br>
+				<br>
+				<div class="row">
+					<div class="lista">
+						<div class="col-md-3"></div>
+						<ol id="cont_lista">
+							<li class="fa fa-facebook-official fa-2x" class="ls"><a>Laura Castro</a></li>
+							<li class="fa fa-twitter fa-2x" class="ls"><a>lcastro1220</a></li>
+							<li class="fa fa-envelope fa-2x" class="ls"><a>lcastrocdo@gmail.com</a></li>
+						</ol>
+					</div>
+
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<!--script src="js/bootstrap.min.js"></script !-->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<!--script src="js/bootstrap.min.js"></script !-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
 <!-- Reference: https://code.tutsplus.com/tutorials/create-a-sticky-note-effect-in-5-easy-steps-with-css3-and-html5--net-13934 !-->

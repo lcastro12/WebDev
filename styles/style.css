@@ -2,21 +2,39 @@ div a{
 	font-size: 15px;
 }
 .lista {
-    display: block;
-    color: #000066;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-
+  display: block;
+  color: #000066;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
 
 }
+.trab_lista{
+  color:#000000;
+  padding-right: 0;
 
+}
+.trab_lista{
+  font-size:150%;
+  font-family: "Times New Roman",Georgia,Serif;
+  font-style: italic;
+}
+#tlista{
+  list-style-type: circle;
+  display:none;
+}
+#cont_lista 
+{
+  display: inline;
+  list-style-type: none;
+  padding-right: 40px;
+}
 
- .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 50%;
-      margin: auto;
-  }
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 50%;
+  margin: auto;
+}
 
 .row {
 	padding-right: 0;
@@ -167,4 +185,7 @@ ol{text-align:center;}
 ol li{display:inline;padding-right:1em;}
 ol li a{color:#fff;}
 
+#div-1.hover {
+            position: absolute; zoom: 70%; border: solid 1px; z-index:10;
+        }
 
