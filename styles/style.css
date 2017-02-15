@@ -8,12 +8,45 @@ div a{
 #Presentacion {
 	background-color: #ffc;
 }
+#Conocimientos {
+	background-color: #cfc;
+}
+#Trabajos {
+	background-color: #ccf;
+}
+#Hobbies {
+	background-color: #cfc;
+}
+#Contacto {
+	background-color: #ffc;
+}
+.pres_lista{
+	font-size:200%;
+	font-family: "Times New Roman",Georgia,Serif;
+	font-style: italic;
+}
+.cono_lista{
+	list-style:none;
+}
 
 .pres_img {
 	display:block;
 	width:15%;
 	height:auto;
 	float:left;
+	margin:10px;
+}
+.cono_img {
+	display:block;
+	width:80px;
+	height:80px;
+	float:left;
+	margin:10px;
+}
+li p{
+	float:left;
+	width:40%;
+	font-style: italic;
 }
 h1{
 	
@@ -42,7 +75,7 @@ h2,p{
   font-weight:normal;
 }
 ul,li{
-  list-style:none;
+  list-style:disc;
 }
 ul{
   overflow:hidden;
@@ -117,3 +150,5 @@ ul li a:hover,ul li a:focus{
 ol{text-align:center;}
 ol li{display:inline;padding-right:1em;}
 ol li a{color:#fff;}
+
+

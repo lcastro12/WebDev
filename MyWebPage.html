@@ -8,6 +8,7 @@
 	<!-- Bootstrap -->
 	<!--link href="css/bootstrap.min.css" rel="stylesheet"!-->
 	<!-- Latest compiled and minified CSS -->
+	<script src="js/javascript.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -17,6 +18,7 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="https://use.fontawesome.com/d84be45c8c.js"></script>
+
 	<title>WebPage</title>
 
 </head>
@@ -42,10 +44,10 @@
 					<!--<div class="col-lg-8">!-->
 					<ul class="nav">
 						<li><a class="fa fa-id-card fa-lg" class="active" href="#Presentacion">Presentación</a></li>
-						<li><a class="fa fa-phone-square fa-lg" href="#Contacto">Contacto</a></li>
 						<li><a class="fa fa-mortar-board fa-lg" href="#Conocimientos">Conocimientos</a></li>
 						<li><a class="fa fa-suitcase fa-lg" href="#Trabajos">Trabajos Universitarios</a></li>
 						<li><a class="fa fa-thumbs-up fa-lg" href="#Hobbies">Hobbies</a></li>
+						<li><a class="fa fa-phone-square fa-lg" href="#Contacto">Contacto</a></li>
 					</ul>
 					<!--/.nav-collapse -->
 				</div>
@@ -61,24 +63,80 @@
 			<br>
 			<br>
 			<div class="col-md-10">
-			<img class="pres_img" src="images/699.jpg" alt="Picture">
-			<p>
-			<ul style="list-style-type: disc">
-				<li>Estudiante Universidad de Los Andes</li>
-				<li>Pregrado Ingeniería de Sistemas y Computación</li>
-				<li>Opción Académica en Biología</li>
-			</ul>
-			</p>
+				<img class="pres_img" src="images/699.jpg" alt="Picture">
+				<p>
+					<ul>
+						<li class="pres_lista"><b>Estudiante Universidad de Los Andes</b></li>
+						<br>
+						<li class="pres_lista"><b>Pregrado Ingeniería de Sistemas y Computación</b></li>
+						<br>
+						<li class="pres_lista"><b>Opción Académica en Biología</b></li>
+					</ul>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="Conocimientos">
+		<div class="row">
+			<div class="col-md-1">
+				<h2>Conocimientos</h2>
+			</div>
+			<div class="con_list">
+				<ul class="cono_lista">
+					<li class="cono_lista">
+						<img class="cono_img" src="images/html.png" alt="HTML">
+						<p>Lenguaje estándar para la elaboración de páginas web. Determina el contenido de esta mas no su funcionalidad.</p>
+					</li>
+					<li class="cono_lista">
+						<img class="cono_img" src="images/CSS.png" alt ="CSS">
+						<p>Lenguaje que nos permite cambiar el diseño de las páginas web.</p>
+					</li>
+					<li class="cono_lista">
+						<img class="cono_img" src="images/javascript.png" alt="JavaScript">
+						<p>Lenguaje orientado a objetos. Ayuda a enviar y recibir información del servidor, y volver más dinámica las páginas web.</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="Trabajos">
+		<div class="row">
+			<div class="col-md-1">
+				<h2>Trabajos Universitarios</h2>
+			</div>
+		</div>
+	</div>
+	<div id="Hobbies">
+		<div class="row">
+			<div class="col-md-1">
+				<h2>Hobbies</h2>
+			</div>
+			<div class=”container”>
+				<div id="slideshow">
+					<img src="images/CSS.png" />
+					<img src="images/CSS.png" />
+					<img src="images/CSS.png" />
+					<img src="images/CSS.png" />
+					<img src="images/CSS.png" />
+				</div>
+				<a href="javascript:moveSlide('prev');" style="float: left;">&lt; Prev</a>
+				<a href="javascript:moveSlide('next');" style="float: right;">Next &gt;</a>
+			</div>
+		</div>
+	</div>
+	<div id="Contacto">
+		<div class="row">
+			<div class="col-md-1">
+				<h2>Contacto</h2>
 			</div>
 		</div>
 	</div>
 
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 
-</div>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<!--script src="js/bootstrap.min.js"></script !-->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<!--script src="js/bootstrap.min.js"></script !-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
+<!-- Reference: https://code.tutsplus.com/tutorials/create-a-sticky-note-effect-in-5-easy-steps-with-css3-and-html5--net-13934 !-->
